@@ -1,1 +1,8 @@
-# ftp_sftp_pool_connection
+# FTP/SFTP Pool connection Example
+
+Apache commons pool 2
+
+Apache commons net (FTP)
+
+Jsch (SFTP)
+
