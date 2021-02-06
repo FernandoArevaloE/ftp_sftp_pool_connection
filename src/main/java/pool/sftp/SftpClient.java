@@ -25,7 +25,7 @@ public class SftpClient implements Client {
 			JSch sch = new JSch();
 			session = sch.getSession(config.getUsername(), config.getHost(), config.getPort());
 			session.setConfig("StrictHostKeyChecking", "no");
-			session.setConfig("PreferredAuthentications", "publicke,keyboard-interactive,password");
+			session.setConfig("PreferredAuthentications", "publickey,keyboard-interactive,password");
 			session.setPassword(config.getPassword());
 			session.setTimeout(config.getTimeout());
 			session.connect();
